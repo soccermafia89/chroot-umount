@@ -1,7 +1,7 @@
 Role Name
 =========
 
-Mounts a boot and root device as a filesystem mount on /mnt.
+Umounts a boot and root device as a filesystem mount on /mnt.  Reverses what the chroot-mount role does.
 
 Requirements
 ------------
