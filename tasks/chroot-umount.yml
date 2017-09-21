@@ -7,7 +7,7 @@
     src: "{{ item.src }}"
     fstype: "{{ item.fstype }}"
     state: unmounted
-  sudo: True
+  become: True
   with_items:
    - { name: '/mnt/boot', src: '/dev/{{ boot_device_name }}1', fstype: 'ext2' }
    - { name: '/mnt/dev/shm', src: 'tmpfs', fstype: 'tmpfs' }
